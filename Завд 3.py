@@ -1,9 +1,18 @@
 import math
-def znach(x,y):
-    return (math.pow(x,2)+math.pow(y,2))
-a = float(input("a= (Для першого і другого векторів)"))
-b = float(input("b= (Для першого вектора)"))
-c = float(input("c= (Для другого вектора)"))
+n = int(input("n ="))
+def znach(x, y):
+    A = []
+    for i in range(n):
+        A.append(x[i] * y[i])
+    S = 0
+    for i in range(n):
+        S = A[i]
+    return(S)
+      
+A = [int(input("A{0}=".format(i))) for i in range(n)]
+B = [int(input("B{0}=".format(i))) for i in range(n)]
+C = [int(input("C{0}=".format(i))) for i in range(n)]
 
-S=2*znach(a,b) - 3*znach(a,c)
+S = 2 * znach(A, ) - 3 * znach(A, C)
+
 print("Відповідь:{}".format(S))
